@@ -1,0 +1,39 @@
+#include<iostream>
+#include<string>
+#include<iomanip>
+using namespace std;
+
+int main() {  
+    string name;
+    string studentNumber ;
+    double prelimGrade, midtermGrade, finalGrade, average;
+
+    cout<< "Enter Student Name: ";
+    getline(cin, name);
+
+    cout<< " Enter Student Name: ";
+    cin>> studentNumber;
+
+    cout<< "Prelim Grade: ";
+    cin>> prelimGrade;
+
+    cout<< "Midterm Grade: ";
+    cin>> midtermGrade;
+
+    cout<< "Final Grade: ";
+    cin>> finalGrade;
+
+    average = (prelimGrade + midtermGrade + finalGrade) / 3;
+    
+    cout<< fixed << setprecision (3);
+
+
+    cout << "Your Average is: "
+    << average << endl;
+    cout<< "Good Job! Keep doing it." <<
+    endl;
+  
+
+    return 0;
+
+}
